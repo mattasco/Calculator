@@ -1,0 +1,69 @@
+#calculette{
+  display: flex;
+  flex-direction: column;
+  border-width:25px;
+  border-style: solid;
+  border-color: black ;
+  padding: 12px 12px 12px;
+  margin: auto;
+  width: 750px;
+  height: 650px;
+}
+
+#cadre{
+  display: flex;
+  border-width:15px;
+  border-style: solid;
+  border-color: black;
+  padding: 12px 12px 12px;
+  text-align: left;
+  margin: auto;
+  justify-content: left;
+  width: 660px;
+  height: 40px;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+button{
+  background: black;
+  border: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+  height: 100px;
+  width: 125px;
+  justify-content: center;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+}
+
+button:active {
+  opacity: .5;
+}
+
+p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5px;
+}

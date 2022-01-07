@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Calculatrice.css">
+</head>
+
+<body>
+	<div id="calculette">
+		<div id="cadre">
+			<p id="output"></p><p id="operator"></p><p id="output2"></p>
+		</div>
+		<div id="container">
+			<div>
+				<button id="CE" value="CE" onclick="clearAll()">CE</button> 
+				<button id="C" value="C" onclick="clearC()">C</button> 
+				<button id="<-" value="<-" onclick="deleteLast()">&larr;</button>
+				<button id='x²' value="x²" onclick="Carre()">x²</button>
+				<button id='racine' value="racine" onclick="Racine()">√</button>
+			</div>
+			<div>
+				<button id="1" value="1" onclick="addDisplay('1')">1 </button>
+				<button id="2" value="2" onclick="addDisplay('2')">2 </button>
+				<button id="3" value="3" onclick="addDisplay('3')">3</button>
+				<button id="4" value="4" onclick="addDisplay('4')">4</button>
+				<button id="5" value="5" onclick="addDisplay('5')">5</button>
+			</div>
+			<div>
+				<button id="6" value="6" onclick="addDisplay('6')">6</button>
+				<button id="7" value="7" onclick="addDisplay('7')">7</button>
+				<button id="8" value="8" onclick="addDisplay('8')">8 </button>
+				<button id="9" value="9" onclick="addDisplay('9')">9</button>
+				<button id="0" value="0" onclick="addDisplay('0')">0 </button>
+			</div>
+			<div>
+				<button id="+" value="+" onclick="operateur('+')">+ </button>
+				<button id="-" value="-" onclick="operateur('-')">-</button>
+				<button id="*" value="*" onclick="operateur('*')">* </button>
+				<button id="/" value="/" onclick="operateur('/')">/</button>
+				<button id="," value="," onclick="doted()">,</button>
+			</div>
+			<div>
+				<button id="+/-" value="+/-" onclick="PositiveNegative()">+/-</button>
+				<button id="cos" value="cos" onclick="Cosinus()">cos(x)</button>
+				<button id="sin" value="sin" onclick="Sinus()">sin(x)</button>
+				<button id="tan" value="tan" onclick="Tangente()">tan(x)</button>
+				<button id="=" value="=" onclick="resoudre()">=</button>
+			</div>
+		</div>
+	</div>
+	<script src="Calculatrice.js"></script>
+</body>
+
+</html>
